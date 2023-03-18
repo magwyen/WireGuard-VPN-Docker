@@ -1,5 +1,5 @@
 version: '3.7'
-#MAINTAINER : Berk Bal & Murat AKpınar
+#MAINTAINER : Berk Bal(www.berkbal.com) & Murat AKpınar(www.akpinarmurat.com.tr)
 services:
   wireguard:
     image: linuxserver/wireguard
