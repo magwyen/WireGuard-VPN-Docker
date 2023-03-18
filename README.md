@@ -46,16 +46,16 @@ Herşey yolunda gittiyse diziminizn için de “config” dizini oluşacaktır. 
 ```bash
 root@debian:~/WireGuard-VPN-Docker/config ls -all
 
-drwxr-xr-x  2 lehisa lehisa 4096 Mar 18 11:58 coredns
--rw-------  1 lehisa lehisa  187 Mar 18 11:58 .donoteditthisfile
-drwx------  2 lehisa lehisa 4096 Mar 18 11:58 peer1
-drwx------  2 lehisa lehisa 4096 Mar 18 11:58 peer2
-drwx------  2 lehisa lehisa 4096 Mar 18 11:58 peer3
-drwx------  2 lehisa lehisa 4096 Mar 18 11:58 peer4
-drwx------  2 lehisa lehisa 4096 Mar 18 11:58 peer5
-drwxr-xr-x  2 lehisa lehisa 4096 Mar 18 11:58 server
-drwxr-xr-x  2 lehisa lehisa 4096 Mar 18 11:58 templates
--rw-------  1 lehisa lehisa 1185 Mar 18 11:58 wg0.conf
+drwxr-xr-x  2 root root 4096 Mar 18 11:58 coredns
+-rw-------  1 root root  187 Mar 18 11:58 .donoteditthisfile
+drwx------  2 root root 4096 Mar 18 11:58 peer1
+drwx------  2 root root 4096 Mar 18 11:58 peer2
+drwx------  2 root root 4096 Mar 18 11:58 peer3
+drwx------  2 root root 4096 Mar 18 11:58 peer4
+drwx------  2 root root 4096 Mar 18 11:58 peer5
+drwxr-xr-x  2 root root 4096 Mar 18 11:58 server
+drwxr-xr-x  2 root root 4096 Mar 18 11:58 templates
+-rw-------  1 root root 1185 Mar 18 11:58 wg0.conf
 ```
 
 Peer1 dizinin içerisi;
@@ -63,11 +63,11 @@ Peer1 dizinin içerisi;
 ```bash
 root@debian:~/WireGuard-VPN-Docker/config/peer1 ls -all
 
--rw-------  1 lehisa lehisa  309 Mar 18 11:58 peer1.conf
--rw-------  1 lehisa lehisa 1127 Mar 18 11:58 peer1.png
--rw-------  1 lehisa lehisa   45 Mar 18 11:58 presharedkey-peer1
--rw-------  1 lehisa lehisa   45 Mar 18 11:58 privatekey-peer1
--rw-------  1 lehisa lehisa   45 Mar 18 11:58 publickey-peer1
+-rw-------  1 root root  309 Mar 18 11:58 peer1.conf
+-rw-------  1 root root 1127 Mar 18 11:58 peer1.png
+-rw-------  1 root root   45 Mar 18 11:58 presharedkey-peer1
+-rw-------  1 root root   45 Mar 18 11:58 privatekey-peer1
+-rw-------  1 root root   45 Mar 18 11:58 publickey-peer1
 ```
 
 Burada bizim işimize yarayacak şey peer1.conf dosyası burada ki dosyanın içinde ki bilgileri kullanacamız clientler de WireGuard uygulamasına ekliyoruz.
