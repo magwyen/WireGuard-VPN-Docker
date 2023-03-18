@@ -1,0 +1,28 @@
+version: '3.7'
+#MAINTAINER : Berk Bal & Murat AKpınar
+services:
+  wireguard:
+    image: linuxserver/wireguard
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Turkey/Istanbul # Saat Dilimi
+      - SERVERPORT=51820
+      - PEERS=5 # Kaç kullanıcınız varsa bu sayıyı ona göre artırmalısnız. 
+      - PEERDNS=auto
+      - ALLOWEDIPS=0.0.0.0/0
+      - INTERNAL_SUBNET=10.13.13.0/24 #Subnet
+      - SERVERURL= YOUR-SERVER-İP #Bu kısma sunucunuzun ip adresini giriyorsunuz
+    volumes:
+      - ./config:/config
+      - /usr/src:/usr/src
+      - /lib/modules:/lib/modules
+    ports:
+      - 51820:51820/udp
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: always
