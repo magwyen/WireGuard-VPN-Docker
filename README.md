@@ -44,7 +44,7 @@ a892c7ddb976   linuxserver/wireguard   "/init"   3 minutes ago   Up 3 minutes   
 Herşey yolunda gittiyse diziminizn için de “config” dizini oluşacaktır. Buranın içinde kaç adet “PEERS=” belirtiyseniz o sayıda dizin oluşur ve bunların içinde ayrı ayrı conf dosyaları ve qr kod resimleri vardır.
 
 ```bash
-root@debian:~/WireGuard-VPN-Docker/config ls -all
+root@debian:~/wireguard-vpn-docker/config ls -all
 
 drwxr-xr-x  2 root root 4096 Mar 18 11:58 coredns
 -rw-------  1 root root  187 Mar 18 11:58 .donoteditthisfile
@@ -61,7 +61,7 @@ drwxr-xr-x  2 root root 4096 Mar 18 11:58 templates
 Peer1 dizinin içerisi;
 
 ```bash
-root@debian:~/WireGuard-VPN-Docker/config/peer1 ls -all
+root@debian:~/wireguard-vpn-docker/config/peer1 ls -all
 
 -rw-------  1 root root  309 Mar 18 11:58 peer1.conf
 -rw-------  1 root root 1127 Mar 18 11:58 peer1.png
@@ -75,7 +75,7 @@ Burada bizim işimize yarayacak şey peer1.conf dosyası burada ki dosyanın iç
 Ayrıca bu peer dosyalarının bir kopyasını kendi bilgisayarınıza almak için; “SCP” komutunu kullanacağız.
 
 ```bash
-scp -r root@ip-adres:/root/WireGuard-VPN-Docker/ /home/mobaxterm/ #Bu kısma sizin kendi bilgisayarınızda olan bir yer belirtmeniz gerekir.
+scp -r root@ip-adres:/root/wireguard-vpn-docker/ /home/mobaxterm/ #Bu kısma sizin kendi bilgisayarınızda olan bir yer belirtmeniz gerekir.
 ```
 
 Böylece sistemde her bir kişi için oluşturduğumuz wireguard config dosyaları kendi sistemimize çektik. Bunları dilerseniz bir exel dosyası oluşturup kimin hangi peer kullandığını hangilerinin boşta, hangilerinin kullanımda olduğunu takip edebilirsiniz.
