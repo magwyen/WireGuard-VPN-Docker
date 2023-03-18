@@ -75,7 +75,7 @@ Burada bizim işimize yarayacak şey peer1.conf dosyası burada ki dosyanın iç
 Ayrıca bu peer dosyalarının bir kopyasını kendi bilgisayarınıza almak için; “SCP” komutunu kullanacağız.
 
 ```bash
-scp -r root@ip-adres:/root/WireGuard-VPN-Docker/ /home/mobaxterm/
+scp -r root@ip-adres:/root/WireGuard-VPN-Docker/ /home/mobaxterm/ #Bu kısma sizin kendi bilgisayarınızda olan bir yer belirtmeniz gerekir.
 ```
 
 Böylece sistemde her bir kişi için oluşturduğumuz wireguard config dosyaları kendi sistemimize çektik. Bunları dilerseniz bir exel dosyası oluşturup kimin hangi peer kullandığını hangilerinin boşta, hangilerinin kullanımda olduğunu takip edebilirsiniz.
