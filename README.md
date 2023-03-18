@@ -12,7 +12,7 @@ SERVERURL=YOUR-SERVER-İP bölümüne sunucuzun ip adresini yazmalısınız.
 Dosyayı düzenletikten sonra dokcer  dosyamızı ayağa kaldırıyoruz.
 
 ```bash
-$docker-compose up -d
+sudo docker-compose up -d
 #####
 Running 0/8
  ⠋ wireguard Pulling                                                                             7.3s
@@ -36,7 +36,7 @@ Eğer bir hata almazsanız en sonunda Runing kısmın altına bu kısım eklenec
 Containerımızın çalıştığını kontrol etmek için “docker ps" komutunu kullanıyoruz. Bu komutu bir kaç kere belirli sürelerde çalıştırıp “STATUS” bölümünden Up time izleyebiliriz.
 
 ```bash
-docker ps
+sudo docker ps
 CONTAINER ID   IMAGE                   COMMAND   CREATED         STATUS         PORTS                                           NAMES
 a892c7ddb976   linuxserver/wireguard   "/init"   3 minutes ago   Up 3 minutes   0.0.0.0:51820->51820/udp, :::51820->51820/udp   wireguard
 ```
