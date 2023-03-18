@@ -2,7 +2,7 @@ version: '3.7'
 #MAINTAINER : Berk Bal(www.berkbal.com) & Murat AKpınar(www.akpinarmurat.com.tr)
 services:
   wireguard:
-    image: linuxserver/wireguard
+    image: linuxserver/wireguard # https://github.com/linuxserver/docker-wireguard
     container_name: wireguard
     cap_add:
       - NET_ADMIN
