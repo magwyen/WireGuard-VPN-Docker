@@ -16,7 +16,7 @@ services:
       - PEERDNS=auto
       - ALLOWEDIPS=0.0.0.0/0
       - INTERNAL_SUBNET=10.13.13.0/24 #Subnet
-      - SERVERURL= YOUR-SERVER-İP #Bu kısma sunucunuzun ip adresini giriyorsunuz
+      - SERVERURL=YOUR-SERVER-İP #Bu kısma sunucunuzun ip adresini giriyorsunuz
     volumes:
       - ./config:/config
       - /usr/src:/usr/src
