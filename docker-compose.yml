@@ -1,5 +1,5 @@
 version: '3.7'
-#MAINTAINER : Berk Bal(www.berkbal.com) & Murat AKpınar(www.akpinarmurat.com.tr)
+#MAINTAINER : Berk Bal(www.berkbal.com) & Murat Akpınar(https://muratakpinar.com.tr)
 services:
   wireguard:
     image: linuxserver/wireguard # https://github.com/linuxserver/docker-wireguard
